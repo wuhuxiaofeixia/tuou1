@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>致力时尚·传承经典 - GAODING COMPANY</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'SimSun', serif, 'Arial', sans-serif;
+}
+
+    body {
+        background: linear-gradient(135deg, #FFF5EC 0%, #FFE8D6 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .container {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        height: 650px;
+        position: relative;
+    }
+    
+    .left-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 20px;
+    }
+    
+    .right-section {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    
+    .logo-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .logo-circle {
+        width: 50px;
+        height: 50px;
+        background-color: #222;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .logo-text {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .title-section {
+        margin-top: 20px;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        right: 100px;
+        z-index: 10;
+    }
+    
+    .chinese-title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .english-title {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    .qr-code {
+        width: 120px;
+        height: 120px;
+        margin: 20px 0;
+    }
+    
+    .contact-section {
+        text-align: center;
+        margin-top: auto;
+    }
+    
+    .contact-chinese {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .contact-english {
+        font-size: 14px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+    
+    .contact-details {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.5;
+    }
+    
+    .cross {
+        font-size: 24px;
+        color: #666;
+        margin: 30px 0;
+    }
+    
+    .slideshow-container {
+        width: 450px;
+        height: 550px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+    
+    .model-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .model-image.active {
+        opacity: 1;
+    }
+    
+    .image-frame {
+        width: 400px;
+        height: 500px;
+        border: 1px solid #f0f0f0;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 50%;
+        right: 200px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    
+    .vertical-text-left {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%) rotate(180deg);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #666;
+    }
+    
+    .vertical-text-right {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #666;
+    }
+    
+    .curve-line {
+        position: absolute;
+        top: 130px;
+        right: 80px;
+        width: 250px;
+        height: 80px;
+        border: none;
+        border-top: 1px solid #000;
+        border-radius: 50%;
+        transform: rotate(-10deg);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="left-section">
+<div>
+<div class="logo-section">
+<div class="logo-circle">触定<br>设计</div>
+<div class="logo-text">IMYAI智能助手</div>
+</div>
+
+            <div class="qr-code">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGsSURBVHhe7dQxSgRBAERB7/+mDQwMTEQQFBEU3GwOYLbonhn64J3gDarSP8uyPOHvDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwuYgbA7C5iBsDsLmIGwOwjbH4fV6vWc3TxbvH5/Z1WNlEM/Ll+zmyeL77Wt29ViZ04+P7ObJ4vF0zq4eq4P4K3MQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzEDYHYXMQNgdhcxA2B2FzELJl+QHLvY+3O9QpLQAAAABJRU5ErkJggg==" alt="QR Code" width="120" height="120">
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <div class="cross">+</div>
+            <p class="contact-chinese">联系我们</p>
+            <p class="contact-english">LIANXIWOMEN</p>
+            <div class="contact-details">
+                <p>邮箱: sbqj666@gaoding.com · 地址: 万科云819号荷塘</p>
+                <p>电话: 86-592-8888888 · 网址: new.imyai.top</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right-section">
+        <div class="title-section">
+            <div class="chinese-title">致力时尚·传承经典</div>
+            <div class="english-title">GAODING COMPANY</div>
+            <div class="curve-line"></div>
+        </div>
+        
+        <div class="image-frame"></div>
+        
+        <div class="slideshow-container">
+            <img class="model-image active" src="/api/placeholder/450/550" alt="Fashion Model 1">
+            <img class="model-image" src="/api/placeholder/450/550" alt="Fashion Model 2">
+            <img class="model-image" src="/api/placeholder/450/550" alt="Fashion Model 3">
+            <img class="model-image" src="/api/placeholder/450/550" alt="Fashion Model 4">
+        </div>
+        
+        <div class="vertical-text-left">ZHULISHSHIWANG</div>
+        <div class="vertical-text-right">CHUANCHENGDINGDIAN</div>
+    </div>
+</div>
+
+<script>
+    // Auto image slider functionality
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.model-image');
+    
+    function showSlides() {
+        // Hide all images
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+        }
+        
+        // Move to next image
+        slideIndex++;
+        
+        // Reset to first image if at the end
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        
+        // Show current image
+        slides[slideIndex].classList.add('active');
+        
+        // Change image every 3 seconds
+        setTimeout(showSlides, 3000);
+    }
+    
+    // Start the slideshow
+    showSlides();
+</script>
+</body>
+</html>
